@@ -82,7 +82,7 @@ This dashboard includes:
 
 #### Planning-Area Map
 
-This interactive map displays report counts across Berlin’s 534 planning areas.
+This interactive map displays report counts by Berlin LOR planning area.
 
 Users can explore the map by:
 
@@ -129,13 +129,13 @@ The financial analysis uses completed non-cellar reports with positive recorded 
 
 ## Repository Contents
 
-* `notebooks/` – Python data preparation and analysis
-* `sql/` – Database and analysis queries
-* `tableau/` – Packaged Tableau workbook
-* `visualisations/` – Dashboard and chart images
-* `data/` – Processed data or data-download instructions
-* `docs/` – Data dictionary and methodology
-* `presentation/` – Final presentation
+- `notebooks/` – Python data preparation and analysis notebooks
+- `sql/` – SQLite database and SQL analysis queries
+- `tableau/` – Packaged Tableau workbook
+- `visualisations/` – Static dashboard previews
+- `data/raw/` – Original source data
+- `data/processed/` – Cleaned and analysis-ready datasets
+- `presentation/` – Final project presentation
 
 ## Limitations
 
@@ -151,21 +151,21 @@ The financial analysis uses completed non-cellar reports with positive recorded 
 
 ### Person 1 – Halyna Shabarovska
 
-* Data collection and preparation
-* Python cleaning and exploratory analysis
-* Data validation
+* Raw-data audit
+* Data cleaning and validation
+* Exploratory Python analysis
+* SQL database and queries
+* Population-adjusted district analysis
 * Python visualisations
-* District population comparison
-* Interpretation and presentation development
 
 ### Person 2 – Selina Reuter
 
-* SQL database and analysis queries
-* Validation of results with SQL
+* Geographic lookup and LOR data preparation
 * Tableau worksheets and dashboards
-* Interactive LOR planning-area map
+* Interactive planning-area map
 * Dashboard filters and interactions
-* Interpretation and presentation development
+* Verification of Tableau figures against Python and SQL
+* Dashboard and presentation development
 
 ### Shared Work
 
@@ -180,9 +180,11 @@ Both team members contributed to:
 
 ## Data Sources
 
-* [Berlin Police Open Data – add the exact dataset link]
-* [Berlin LOR geographic data – add the exact link]
-* [Berlin district population data – add the exact link]
+- [Berlin Police Open Data – Bicycle Incidents](https://daten.berlin.de/datensaetze/fahrraddiebstahl-in-berlin)
+- [Berlin LOR Geographic Data](https://daten.berlin.de/datensaetze/lebensweltlich-orientierte-raume-lor-01-01-2021-wfs-34c86848)
+- [Berlin Population Data, 31 December 2025](https://daten.berlin.de/datensaetze/einwohnerinnen-und-einwohner-in-berlin-in-lor-planungsraumen-am-31-12-2025)
+
+The bicycle-report data was accessed on 10 August 2026. Geographic and population data were provided by the Amt für Statistik Berlin-Brandenburg.
 
 ## Tableau
 
@@ -199,6 +201,12 @@ Both team members contributed to:
 ![Bicycle Types and Financial Damage Dashboard](visualisations/bicycle_types_financial_dashboard.png)
 
 Static previews are shown above. The packaged Tableau workbook is available in the `tableau/` folder.
+
+## Project Files
+
+- [Final presentation](presentation/Dude_Wheres_My_Bike_Final_Presentation.pdf)
+- [Packaged Tableau workbook](tableau/dude_wheres_my_bike.twbx)
+- [SQLite database](sql/berlin_bicycle_theft.db)
 
 ## Authors
 
